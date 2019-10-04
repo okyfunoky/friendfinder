@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // //html routes, will sendback the homepage
-// var htmlRoutes = require('./routes/htmlRoutes');
-// app.use(htmlRoutes);
+var htmlRoutes = require('./app/routes/htmlRoutes');
+app.use(htmlRoutes);
 
 var apiRoutes = require('./app/routes/apiRoutes');
 app.use('/api',apiRoutes);

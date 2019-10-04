@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/okyfunoky/friendfinder/issues"
   },
-  "homepage": "https://github.com/okyfunoky/friendfinder#readme"
+  "homepage": "https://github.com/okyfunoky/friendfinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

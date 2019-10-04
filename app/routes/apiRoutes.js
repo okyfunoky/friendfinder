@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var friends = require("../data/friends");
 
-
 router.get('/friends', function (req, res) {
     //get coolness from db in coolness order
     res.json(friends);
@@ -27,7 +26,6 @@ router.get('/friends/:name', function (req, res) {
             friendToReturn = element;
         }
     }
-
 
     res.json(friendToReturn);
 })

@@ -133,8 +133,11 @@
             function(data) {
                 if(data){
                     match = data;
+                    $('#matchbody').empty();
                     let matchHeader = $("<h2>").text(match.name);
                     let matchImage = $("<img>").attr("src",match.imageSource).attr("alt",match.alt);
+                    matchImage.attr("width",220);
+                    matchImage.attr("height",220);
                     $('#matchbody').append(matchHeader, matchImage);
                     $('#matchModal').modal();
                 }

@@ -6,7 +6,7 @@ router.get('/addhero',function(req,res){
     res.sendFile(path.join(__dirname,'../public/addhero.html'))
 });
 
-router.get('*',function(req,res){
+router.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'../public/home.html'))
 });
 
